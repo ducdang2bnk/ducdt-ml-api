@@ -12,10 +12,16 @@ How to install
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
-3. run by comand line: uvicorn app.main:app --reload
-4. run project by pycharm
+3. alembic init alembic
+```bash
+alembic init alembic
+```
+4. add "sqlalchemy.url = postgresql://user:password@localhost/dbname" vao alembic.ini
+4. run by comand line: uvicorn app.main:app --reload
+5. run project by pycharm
     name: uvicorn
     env
     module: uvicorn
     script: app.main:app --reload
+
     

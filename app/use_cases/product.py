@@ -1,5 +1,5 @@
 from app.models.product import Product
-from app.repositories.product_repository import ProductRepository
+from app.repositories.product import ProductRepository
 
 class CreateProduct:
     def __init__(self, repository: ProductRepository):
